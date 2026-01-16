@@ -1,0 +1,148 @@
+.form-area {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30%;
+    display: flex;
+    align-items: flex-start;
+    z-index: 2;
+}
+
+
+.auth-form {
+    width: 420px;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    margin-right: 24px;
+
+}
+
+.auth-form__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 40px;
+}
+
+.aurh-form__logo {
+    width: 132px;
+    height: 30px;
+    margin-bottom: 40px;
+}
+
+.auth-form__title {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 24px;
+    color: #000;
+}
+
+.auth-form__text {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+    color: #000;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.auth-form__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.login-form__input {
+    padding: 16px 16px 16px 52px;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: 16px;
+
+}
+
+.login-form__input:focus-visible {
+    outline: none;
+}
+
+.login-form__input:focus,
+.login-form__input:hover {
+    border-color: #B4A9FF;
+}
+
+.login-form__input--email {
+    background-image: url(../../assets/mailForm.svg);
+}
+
+.login-form__input--name {
+    background-image: url(../../assets/user.svg);
+}
+
+.login-form__input--password {
+    background-image: url(../../assets/password.svg);
+}
+
+.auth-form__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.auth-form__button {
+    border: none;
+    padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.auth-form__button--extra {
+    padding: 16px;
+    border-radius: 28px;
+    background-color: #67A5EB;
+    color: #FFFFFF;
+
+}
+
+.auth-form__button-close {
+    padding: 12px;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.input-error {
+    border-color: #FF7575;
+} 
+
+.form-error {
+    color: #FF7575;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .auth-form {
+        width: 335px;
+        margin: 0;
+    }
+
+    .auth-form__button-close {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        border-radius: none;
+        background-color: inherit;
+
+    }
+}

@@ -1,0 +1,70 @@
+body {
+    background:
+        linear-gradient(178.73deg, rgba(39, 135, 245, 0.18) -17.53%, rgba(163, 147, 245, 0.18) 131.74%),
+        linear-gradient(180deg, #000000 0%, rgba(39, 36, 36, 0.7) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.app-container {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    gap: 57px;
+}
+
+.genre-page {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.genres-navigate {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.navigate-link {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 700;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .app-container {
+        padding: 16px 18.5px;
+    }
+
+    .genre-page {
+        gap: 40px;
+    }
+    .navigate-link {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}

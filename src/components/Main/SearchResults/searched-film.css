@@ -1,0 +1,141 @@
+.search-results {
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+
+.search-list {
+    list-style: none;
+    width: 559px;
+    padding: 0;
+    margin: 0;
+    background-color: #393B3C;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.searched-film {
+  
+    display: flex;
+    gap: 16px;
+    padding: 20px 8px;
+}
+
+.searched-film--mobile {
+    display: none;
+}
+
+.searched-film__poster {
+    width: 40px;
+    height: 52px;
+}
+
+.searched-film__right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.searched-film__title {
+    margin: 0;
+    font-size: 18px;
+    line-height: 20px;
+}
+.searched-film__details {
+    display: flex;
+    gap: 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.searched-film__rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 5px 8px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+    border-radius: 16px;
+    color: #fff;
+}
+
+
+.searched-film__rating--default {
+    background-color: #A59400;
+}
+
+.searched-film__rating--red {
+    background-color: #C82020;
+}
+
+.searched-film__rating--grey {
+    background-color: #777777;
+}
+
+.searched-film__rating--green {
+    background-color: #308E21;
+}
+
+.searched-film__item {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.searched-film__title {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .searched-film--desktop {
+        display: none;
+    }
+    .searched-film--mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 220px;
+        padding: 0;
+    }
+
+    .searched-film__down {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .searched-film__details {
+        margin-bottom: 4px;
+    }
+
+    .searched-film__title {
+        line-height: 24px;
+    }
+
+    .searched-film__poster {
+        width: 158px;
+        height: 206px;
+    }
+
+    .search-list {
+        flex-direction: row;
+        overflow: auto;
+       
+        gap: 16px;
+        padding: 24px 20px;
+    }
+
+    .search-results {
+         width: 335px;
+         position: absolute;
+         top: 70px;
+         left: 20px;
+    }
+}

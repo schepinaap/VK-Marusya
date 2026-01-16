@@ -1,0 +1,200 @@
+.film-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.film-card__left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 60%;
+}
+
+.film-card__right--mobile {
+    display: none;
+}
+
+.film-details {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.film-details__rating {
+    color: #fff;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.film-details__rating--default {
+    background-color: #A59400;
+}
+
+.film-details__rating--red {
+    background-color: #C82020;
+}
+
+.film-details__rating--grey {
+    background-color: #777777;
+}
+
+.film-details__rating--green {
+    background-color: #308E21;
+}
+
+.film-card__title {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.film-card__description {
+    font-size: 24px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0;
+    margin: 0;
+    margin-bottom: 44px;
+}
+
+.film-card__buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.film-card__buttons-down {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.film-card__btn {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #393B3C;
+    border: none;
+    border-radius: 28px;
+    padding: 16px 48px;
+    cursor: pointer;
+}
+
+.film-card__btn:hover {
+    background-color: #67A5EB;
+}
+
+.film-card__btn:focus-visible,
+.film-card__btn:focus
+ {
+    background-color: #45526E;
+    color: rgba(255, 255, 255, 0.5);
+    outline: none;
+}
+
+.film-card__btn--clicked {
+    background-color: #747474;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.film-card__btn--trailer {
+    background-color: #67A5EB;
+}
+
+.film-card__btn--small {
+    padding: 16px 22px 10px;
+}
+
+.film-card__btn-img {
+    width: 24px;
+    height: 24px;
+}
+
+.film-card__poster {
+    max-width: 680px;
+    border-radius: 16px;
+}
+
+@media (max-width: 767px) {
+    .film-card {
+        min-width: 335px;
+        flex-direction: column;
+        margin-bottom: 48px;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .film-card__right {
+        display: none;
+    }
+
+    .film-card__right--mobile {
+        display: flex;
+        width: 338px;
+        height: 234px;
+    }
+
+    .film-card__poster {
+        object-fit: cover;
+        max-width: 338px;
+        margin-bottom: 24px;
+    }
+
+    .film-card__left {
+        width: 100%;
+    }
+    .film-card__title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .film-details {
+        width: 100%;
+        justify-content: space-between;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .film-card__description {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+
+.film-card__buttons--random {
+    flex-direction: column;
+    align-items: center;
+}
+
+.film-card__buttons-down {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.film-card__btn {
+    padding: 16px 0;
+    width: 167px;
+    text-align: center;
+}
+
+.film-card__btn--small {
+    padding: 16px 22px 10px;
+    width: 68px;
+}
+}

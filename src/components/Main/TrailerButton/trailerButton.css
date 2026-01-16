@@ -1,0 +1,31 @@
+.trailer-btn {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+        color: #fff;
+        background-color: #67A5EB;
+        border: none;
+        border-radius: 28px;
+        padding: 16px 48px;
+        cursor: pointer;
+}
+
+.trailer-btn:hover {
+        background-color: #FFFFFF;
+        color: #000000;
+}
+
+
+.trailer-btn:focus,
+.trailer-btn:focus-visible {
+        background-color: #45526E;
+        color: rgba(255, 255, 255, 0.5);
+        outline: none;
+}
+
+
+@media (max-width: 767px) {
+        .trailer-btn {
+                width: 335px;
+        }
+}

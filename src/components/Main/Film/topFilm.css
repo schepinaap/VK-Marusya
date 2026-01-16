@@ -1,0 +1,10 @@
+.top-film-card__poster {
+    width: 225px;
+    height:336px; 
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 16px;  
+}
+
+.top-film-card__poster:hover {
+    border: 1px solid #fff;
+}

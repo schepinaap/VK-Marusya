@@ -1,0 +1,20 @@
+.trailer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.trailer__video {
+    margin-right: 24px;
+}
+
+.trailer__button-close {
+    padding: 12px;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+}
